@@ -3,13 +3,17 @@
 #include <time.h>
 /* more headers goes there */
 
-/*
- * Assign random value to variable n
- * determine weather it is negative or positive
- */
+/**
+ * main - main funcution
+ *
+ * Description: Assign random value for n
+ * check positive or negative
+ * Return: Return 0 when funcution ends
+*/
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
