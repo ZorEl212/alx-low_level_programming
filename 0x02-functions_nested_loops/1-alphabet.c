@@ -1,3 +1,4 @@
+#include "header.h"
 /**
  * print_alphabet - loop through each alphabet
  *
@@ -12,5 +13,5 @@ void print_alphabet(void)
 		_putchar(x);
 		x++;
 	}
-	return;
+	_putchar('\n');
 }
