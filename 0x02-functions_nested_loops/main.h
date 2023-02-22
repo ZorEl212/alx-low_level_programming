@@ -5,3 +5,4 @@ int _islower(int zor);
 int _isalpha(int zor);
 int print_sign(int x);
 int _abs(int num);
+void jack_bauer(void);
