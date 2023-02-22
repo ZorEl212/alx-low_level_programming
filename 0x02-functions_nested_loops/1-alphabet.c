@@ -1,14 +1,17 @@
 /**
- * print_alphabet - print all lowercase alphabets
- * and print new line
+ * print_alphabet - loop through each alphabet
  *
- * Return: Null
+ * Return: null (no return value)
  */
 
 void print_alphabet(void)
 {
-		char zor;
-	for (zor = 'a'; zor <= 'z'; zor++)
-		_putchar(zor);
+		int x = 97;
+	while (x < 123)
+	{
+		_putchar(x);
+		x++;
+	}
 	_putchar('\n');
+	return;
 }
