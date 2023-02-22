@@ -11,6 +11,16 @@ void print_alphabet_x10(void)
 	int i;
 
 	for (i = 0; i < 10; i++)
+	{
+		int x = 97;
 
-		print_alphabet();
+		while (x < 123)
+		{
+			_putchar(x);
+			x++;
+		}
+		_putchar('\n');
+
+	}
+
 }
