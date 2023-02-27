@@ -1,4 +1,4 @@
-#include<strcpy.h>
+#include<string.h>
 #include "main.h"
 
 /**
