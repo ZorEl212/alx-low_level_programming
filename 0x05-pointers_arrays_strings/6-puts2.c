@@ -1,4 +1,5 @@
 #include <string.h>
+#include "main.h"
 /**
  * puts2 - print skipping one element
  * @str: string to evaluate
