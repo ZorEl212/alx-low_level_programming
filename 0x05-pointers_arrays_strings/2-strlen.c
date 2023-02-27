@@ -1,3 +1,5 @@
+#include <string.h>
+
 /**
  * _strlen - length of a string
  * @s: input string
