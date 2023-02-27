@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * print_array - print specified number of elements from array
  * @a: array to be printed
