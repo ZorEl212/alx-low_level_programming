@@ -1,3 +1,6 @@
+#include <string.h>
+#include "main.h"
+
 /**
  * _strncat - concatenate string determining dest length from src
  * @dest: destination string
