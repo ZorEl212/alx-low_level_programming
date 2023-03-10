@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	printf("%d\n", argc);
-	for (i = 0; i < argc; i++)
+	printf("%d\n", argc - 1);
+	for (i = 1; i < argc; i++) /* A decoy loop to fix unused var warning */
 	{
 		argv[i] = argv[i];
 	}
