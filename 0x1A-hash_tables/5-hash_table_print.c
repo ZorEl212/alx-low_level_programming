@@ -15,7 +15,7 @@ void hash_table_print(const hash_table_t *ht)
 	bool pair_printed = false;
 
 	if (ht == NULL || ht->array == NULL)
-		printf("{}\n");
+		return;
 
 	if (ht != NULL)
 	{
