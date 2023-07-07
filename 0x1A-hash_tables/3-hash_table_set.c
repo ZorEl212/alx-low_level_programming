@@ -1,11 +1,19 @@
 #include "hash_tables.h"
 
+/**
+ * new_node - create a new node with given key and value
+ * @key: key string
+ * @value: value string
+ *
+ * Return: Created node or Null in case of failure
+*/
 
 hash_node_t *new_node(const char *key, const char *value)
 {
 	hash_node_t *item;
 	char *val_cpy;
 	char *key_cpy;
+
 	val_cpy = strdup(value);
 	key_cpy = strdup(key);
 
@@ -62,13 +70,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else if (ht->array[index] != NULL)
 	{
 		current = ht->array[index];
-		while(current != NULL)
+		while (current != NULL)
 		{
 			if (strcmp(key, current->key) == 0)
 			{
 				current->value = strdup(item->value);
 				return (1);
-			}	
+			}
 			current = current->next;
 		}
 		item->next = ht->array[index];
