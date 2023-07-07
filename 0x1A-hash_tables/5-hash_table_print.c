@@ -33,7 +33,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (pair_printed == true)
 					printf(", ");
 
-				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+				printf("'%s': '%s'", head->key, head->value);
 				pair_printed = true;
 				head = head->next;
 			}
