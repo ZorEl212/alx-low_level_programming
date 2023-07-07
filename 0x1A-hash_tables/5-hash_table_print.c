@@ -14,7 +14,7 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *head;
 	bool pair_printed = false;
 
-	if (ht == NULL)
+	if (ht == NULL || ht->array == NULL)
 		printf("{}\n");
 
 	if (ht != NULL)
@@ -34,6 +34,7 @@ void hash_table_print(const hash_table_t *ht)
 					printf(", ");
 
 				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+                printf("%ld", i);
 				pair_printed = true;
 				head = head->next;
 			}
