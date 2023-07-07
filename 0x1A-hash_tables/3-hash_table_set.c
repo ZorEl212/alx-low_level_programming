@@ -14,6 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *item;
+	char *val_cpy = strdup(value);
 
 	if (key == NULL || strlen(key) == 0 || ht == NULL)
 		return (0);
@@ -24,7 +25,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	item->key = (char *) key;
-	item->value = (char *) value;
+	item->value = val_cpy;
+
 	if (ht->array == NULL)
 		return (0);
 
