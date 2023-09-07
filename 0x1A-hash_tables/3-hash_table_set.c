@@ -12,6 +12,8 @@ hash_node_t *new_item(const char *key, const char *value)
 {
 	hash_node_t *item = malloc(sizeof(hash_node_t));
 
+
+
 	item->key = strdup(key);
 	item->value = strdup(value);
 
@@ -52,16 +54,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(key, current->key) == 0)
 			{
-				current->value = strdup(value);
+				current->value = strdup(item->value);
 				return (1);
 			}
 
 			current = current->next;
 		}
-
+		item->next = ht->array[index];
 		ht->array[index] = item;
+
 
 		return (1);
 	}
+
 	return (0);
 }
