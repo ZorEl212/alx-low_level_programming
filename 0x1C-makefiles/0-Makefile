@@ -1,0 +1,7 @@
+# My first makefile
+CC=gcc
+
+all: sch
+
+sch:	main.c school.c
+	$(CC) main.c school.c -o school  
