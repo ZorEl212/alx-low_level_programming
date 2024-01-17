@@ -11,8 +11,10 @@
  */
 void print_subarray(int *array, size_t left, size_t right)
 {
+	size_t i;
+
 	printf("Searching in array: ");
-	for (size_t i = left; i < right; i++)
+	for (i = left; i < right; i++)
 	{
 		if (i > left)
 			printf(", ");
